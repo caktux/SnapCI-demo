@@ -22,4 +22,4 @@ class Snapybot(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url + "/")
         driver.save_screenshot('screenshot.png')
-        driver.find_element_by_link_text("ABOUT").click()
+        driver.find_element_by_link_text("WHAT IS IT").click()
