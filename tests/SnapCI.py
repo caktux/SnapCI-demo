@@ -18,7 +18,7 @@ class SnapCI(unittest.TestCase):
         self.driver.set_window_position(0, 0)
         self.driver.set_window_size(1280, 1024)
 
-    def test_snapybot(self):
+    def test_snapci(self):
         driver = self.driver
         driver.get(self.base_url + "/")
         driver.save_screenshot('screenshot.png')
