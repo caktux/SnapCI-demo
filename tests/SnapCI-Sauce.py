@@ -13,7 +13,7 @@ class SnapCISauce(unittest.TestCase):
         caps['platform'] = "Linux"
         caps['version'] = ""
 
-        caps['name'] = 'snapybot.com on Sauce'
+        caps['name'] = 'SnapCI.com on Sauce'
 
         self.driver = webdriver.Remote(
             desired_capabilities=caps,
