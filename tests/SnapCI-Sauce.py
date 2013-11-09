@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import unittest, time, re
 
-class SnapySauce(unittest.TestCase):
+class SnapCISauce(unittest.TestCase):
     def setUp(self):
         caps = webdriver.DesiredCapabilities.CHROME
         caps['platform'] = "Linux"
@@ -24,9 +24,9 @@ class SnapySauce(unittest.TestCase):
         # Add Sauce sessionId for nose-sauce
         self.sessionId = self.driver.session_id
 
-    def test_snapy_sauce(self):
+    def test_snapci_sauce(self):
         driver = self.driver
-        driver.get("http://snapybot.com/")
+        driver.get("https://staging-snapci.caktux.ca/")
         driver.find_element_by_link_text("Easy").click()
         driver.find_element_by_link_text("WHAT IS IT").click()
         driver.find_element_by_link_text("DOCS").click()
